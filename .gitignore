@@ -1,0 +1,9 @@
+.idea
+__pycache__
+datasets_old
+screenshots
+tg_data
+input
+output
+.venv
+.DS_Store

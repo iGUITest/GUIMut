@@ -1,0 +1,54 @@
+# environment
+env:
+    emulator: your_avd_name
+    emulatorPath: path_to_emulator
+
+# Appium configuration
+appium:
+    platformName: Android
+    automationName: uiautomator2
+    deviceName: android
+    appPackage: package.name.of.the.app
+    appActivity: package.name.of.the.app.MainActivity
+    language: en
+    locale: US
+    serverUrl: http://localhost:4723
+
+# Graph building configuration
+screenshotDir: screenshots
+graphDir: tg_data
+logDir: logs
+delay: 0.5
+sameStateStrategy:
+    type: hash
+belongingStrategy:
+    type: tree_similarity
+    threshold: 0.9
+eventVisitStrategy:
+    type: graph_optimized
+maxExplorationEpochs: 500
+coverageThreshold: 95
+reset: true
+
+# Path Mutation configuration
+scriptDir: your_script_path_here
+mutation:
+    maxPathLength: 20
+    maxMutations: 100
+MRs:
+    MRReplace:
+        enabled: true
+        find_checkpoint: auto
+    MRCycle:
+        enabled: true
+        find_checkpoint: auto
+outputDir: your_output_path_here
+
+# Statistics configuration
+# these are for statistics collection, which is irrelevant to our method
+statistics:
+    enabled: false
+    outputDir: "abs_path_to ./output/statistics"
+    metadataPath: "abs_path_to ./statistic/metadata.yaml"
+coverageFile: true
+jacocoAgentPath: /path/to/jacocoagent.jar

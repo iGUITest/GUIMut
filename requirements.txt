@@ -1,0 +1,6 @@
+PyYAML~=6.0.2
+Appium-Python-Client~=5.0.0
+selenium~=4.31.0
+numpy~=2.2.5
+scipy~=1.15.2
+lxml~=5.4.0

@@ -1,0 +1,114 @@
+src_dir: "path/to/source/dir"
+app:
+  - name: "package.name.of.the.app"
+    category: "category_name_for_statistics"
+    src:
+      location: "dir/to/app/source"
+      jdk_ver: "jdk_version_used_to_build"
+      cov_input_location: "app/build/outputs/code_coverage/debugAndroidTest/connected/coverage.ec"
+      report_output_location: "app/build/reports/jacoco/jacocoManualReport/jacocoManualReport.xml"
+      
+keys:
+  modeling:
+    exp_t:
+      type: "float"
+      scale: "app"
+      default: 0.0
+      is_caculated: false
+    exp_ep:
+      type: "int"
+      scale: "app"
+      default: 0
+      is_caculated: false
+    exp_st:
+      type: "float"
+      scale: "app"
+      default: 0.0
+      is_caculated: true
+    states:
+      type: "int"
+      scale: "app"
+      default: 0
+      is_caculated: false
+    events:
+      type: "int"
+      scale: "app"
+      default: 0
+      is_caculated: false
+    trans:
+      type: "int"
+      scale: "app"
+      default: 0
+      is_caculated: false
+    aved:
+      type: "float"
+      scale: "app"
+      default: 0
+      is_caculated: false
+    ucl:
+      type: "int"
+      scale: "app"
+      default: 0
+      is_caculated: false
+    cl:
+      type: "int"
+      scale: "app"
+      default: 0
+      is_caculated: false
+    cc:
+      type: "float"
+      scale: "app"
+      default: 0.0
+      is_caculated: true
+    ed_cond:
+      type: "str"
+      scale: "app"
+      default: "N/A"
+      is_caculated: false
+  mutation:
+    steps:
+      type: "str"
+      scale: "script"
+      default: 0
+      is_caculated: false
+    gen_cnt:
+      type: "int"
+      scale: "script"
+      default: 0
+      is_caculated: false
+    mut_cnt:
+      type: "int"
+      scale: "script"
+      default: 0
+      is_caculated: false
+    vr:
+      type: "float"
+      scale: "script"
+      default: 0.0
+      is_caculated: true
+    mut_t:
+      type: "float"
+      scale: "script"
+      default: 0.0
+      is_caculated: false
+    om_dst:
+      type: "float"
+      scale: "script"
+      default: 0.0
+      is_caculated: false
+    mm_dst:
+      type: "float"
+      scale: "script"
+      default: 0.0
+      is_caculated: false
+    ccr:
+      type: "float"
+      scale: "script"
+      default: 0.0
+      is_caculated: false
+    dcr:
+      type: "float"
+      scale: "script"
+      default: 0.0
+      is_caculated: false
+    
